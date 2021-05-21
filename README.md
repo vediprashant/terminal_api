@@ -3,6 +3,9 @@
 This API is used in a terminal application which is used to inspect what is getting posted to a HTTP Url.
 This is made using Django, Django Rest Framework, Celery, Redis
 
+View Demo [Demo Link](https://terminalurl.herokuapp.com/)
+
+
 ## Install and Run
 
 Make sure you have python 3.7+ and redis running

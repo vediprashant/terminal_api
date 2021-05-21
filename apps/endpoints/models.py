@@ -16,7 +16,7 @@ class Endpoint(commons_models.TimeStampModel):
         return '{} -> {}'.format(self.url, self.created_at)
 
 
-class EndpointDetails(commons_models.TimeStampModel):
+class EndpointDetail(commons_models.TimeStampModel):
     """
     Model to store the data that is being hit to the url
     """

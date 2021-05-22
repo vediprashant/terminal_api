@@ -1,5 +1,4 @@
 from rest_framework import generics
-from django.db.models import Q
 
 from apps.endpoints import (
     models as endpoint_models,
@@ -12,7 +11,7 @@ class EndpointView(generics.ListCreateAPIView):
     """
     View to Create and List URL's
     """
-    queryset = endpoint_models.Endpoint.objects.all()
+    queryset = endpoint_models.Endpoint.objects.all().order_by('-created_at')
     serializer_class = endpoints_serializers.EndpointSerializer
 
     def get_queryset(self):
